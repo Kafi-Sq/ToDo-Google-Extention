@@ -1,2 +1,1 @@
-First Personal project
-What do people write in read me's?
+Google extention that allows you to write and add to both a To-do list and a notes app. Made by Hassen Hassen, 2021.

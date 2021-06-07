@@ -4,34 +4,57 @@
     box-sizing: border-box;
 }
 
-.title {
-    text-align: center;
+body {
     max-width: 400px;
-    margin: 5px 0;
-    text-decoration: underline;
 }
 
-.container {
+.whole {
+    margin: 10px;
+}
+
+.container1 {
     display: flex;
     max-width: 400px;
+    height: auto;
     text-align: center;
     border: 1px solid black;
-    min-height: 400px;
+    border-bottom: none;
 }
 
-.col-1 {
+
+.col1, .col2 {
     flex: 1;
-    border: 1px solid blue;
-    margin: 5px;
+}
+
+.col1:first-child, .col2:first-child {
+    margin-right: 20px;;
+}
+
+.rightborder1, .rightborder2 {
+    border-right: 1px solid black;
+}
+.leftborder1, .leftborder2 {
+    border-left: 1px solid black;
+}
+
+.container2 {
+    display: flex;
+    max-width: 400px;
+    height: auto;
+    text-align: center;
+    border: 1px solid black;
 }
 
 ul {
+    margin: 10px 0 10px 30px;
     text-align: left;
-    margin: 10px;
-    list-style-type: none;
 }
 
-.col-1:first-child {
-    margin-right: 10px;
+button {
+    margin: 10px 0;
+    padding: 3px 15px;
+    background-color: rgb(34, 238, 170);
+    color: white;
+    border: none;
+    border-radius: 3px;
 }
-
