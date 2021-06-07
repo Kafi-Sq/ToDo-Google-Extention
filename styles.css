@@ -5,20 +5,29 @@
 }
 
 body {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .whole {
     margin: 10px;
 }
 
+.title {
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: none;
+    padding: 4px 0;
+    background-color: #e63946;
+}
+
 .container1 {
     display: flex;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
     text-align: center;
     border: 1px solid black;
     border-bottom: none;
+    background-color: #f1faee;
 }
 
 
@@ -39,10 +48,11 @@ body {
 
 .container2 {
     display: flex;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
     text-align: center;
     border: 1px solid black;
+    background-color: #a8dadc;
 }
 
 ul {
