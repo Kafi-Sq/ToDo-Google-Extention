@@ -23,16 +23,16 @@ input.addEventListener('keydown', function (e) {
 function doIt() {
     list = ''
     for (let i = 0; i < mySave.length; i++) {
-        list += `<li onclick="dele()" class="liStyle">${mySave[i]}</li>`
+        list += `<li class="liStyle">${mySave[i]}</li>`
     }
     ul.innerHTML = list
 }
 
-let dele = function(e) {
-    localStorage.removeItem("mySave")
-    mySave.pop()    
-    doIt()
-}
+// let dele = function(e) {
+//     localStorage.removeItem("mySave")
+//     mySave.pop()    
+//     doIt()
+// }
 
 
 
