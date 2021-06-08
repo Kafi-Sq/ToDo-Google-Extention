@@ -28,11 +28,10 @@ function doIt() {
     ul.innerHTML = list
 }
 
-let dele = function() {
+let dele = function(e) {
     localStorage.removeItem("mySave")
-    mySave.pop()
+    mySave.pop()    
     doIt()
-    console.log("working")
 }
 
 
