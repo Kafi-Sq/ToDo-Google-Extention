@@ -5,54 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
     <title>Today</title>
 </head>
 
 <body>
-    <section class="whole">
-        <div class='title'>
-            <h1>Today</h1>
-        </div>
-        <div class='container1'>
-            <div class="col1 rightborder1">
-                <h1>To-Do</h1>
-            </div>
-            <div class="col1 leftborder1">
-                <h1>Notes</h1>
-            </div>
-        </div>
 
-        <div class="container2">
-            <div class="col2 rightborder2">
-                <ul>
-                    <li>To-Do 1</li>
-                    <li>To-Do 2</li>
-                    <li>To-Do 3</li>
-                    <li>To-Do 4</li>
-                    <li>To-Do 5</li>
-                    <li>To-Do 6</li>
-                    <li>To-Do 7</li>
-                    <li>To-Do 8</li>
-                </ul>
-                <button>Add</button>
-            </div>
-
-            <div class="col2 leftborder2">
-                <ul>
-                    <li>Note 1</li>
-                    <li>Note 2</li>
-                    <li>Note 3</li>
-                    <li>Note 4</li>
-                    <li>Note 5</li>
-                    <li>Note 6</li>
-                    <li>Note 7</li>
-                    <li>Note 8</li>
-                </ul>
-                <button>Add</button>
-            </div>
+    <div class="container">
+        <div class="top">
+            <h1>To-Do</h1>
+            <p>Click enter to add a new To-do, click the To-do to delete it.</p>
+            <input id='input' type="text" placeholder="Add a To-do">
         </div>
-    </section>
+        <div class="bottom">
+            <ul id='ul'>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <script src='app.js'></script>
 </body>
 
 </html>

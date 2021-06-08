@@ -5,66 +5,75 @@
 }
 
 body {
-    max-width: 300px;
+    font-family: 'EB Garamond', serif;
 }
 
-.whole {
+.container {
+    width: 350px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.top {
     margin: 10px;
 }
 
-.title {
-    text-align: center;
-    border: 1px solid black;
-    border-bottom: none;
-    padding: 4px 0;
-    background-color: #e63946;
-}
-
-.container1 {
-    display: flex;
-    max-width: 300px;
-    height: auto;
-    text-align: center;
-    border: 1px solid black;
-    border-bottom: none;
-    background-color: #f1faee;
+.top p {
+    font-size: 14px;
 }
 
 
-.col1, .col2 {
-    flex: 1;
-}
-
-.col1:first-child, .col2:first-child {
-    margin-right: 20px;;
-}
-
-.rightborder1, .rightborder2 {
-    border-right: 1px solid black;
-}
-.leftborder1, .leftborder2 {
-    border-left: 1px solid black;
-}
-
-.container2 {
-    display: flex;
-    max-width: 300px;
-    height: auto;
-    text-align: center;
-    border: 1px solid black;
-    background-color: #a8dadc;
-}
-
-ul {
-    margin: 10px 0 10px 30px;
-    text-align: left;
-}
-
-button {
+.top input {
     margin: 10px 0;
-    padding: 3px 15px;
-    background-color: rgb(34, 238, 170);
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: gray;
     color: white;
+}
+
+input::placeholder {
+    color: rgb(211, 211, 211);
+}
+
+.top button {
+    padding: 5px 20px;
     border: none;
     border-radius: 3px;
+}
+
+.bottom {
+    margin: 15px 10px;
+    border-radius: 3px;
+    background-color: gray;
+}
+
+.bottom ul {
+    list-style-type: none;
+}
+
+.bottom li {
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+    margin: 0 30px;
+    border-color: rgb(199, 199, 199);
+}
+
+.bottom li:last-child {
+    border-bottom: none;
+}
+
+.liStyle:hover {
+    background-color: rgb(119, 119, 119);
+    cursor: pointer;
+}
+
+.bottom button {
+    background-color: red;
+    margin-left: 180px;
 }
