@@ -1,22 +1,44 @@
 const input = document.querySelector('#input')
 let ul = document.querySelector('#ul')
+const reload = JSON.parse(localStorage.getItem("mySave"))
 
+
+let mySave = []
+
+if (reload) {
+    mySave = reload
+    doIt()
+}
 
 
 input.addEventListener('keydown', function (e) {
     if (e.code === 'Enter') {
-
-        let li = document.createElement('li')
-        li.classList.add('liStyle')
-        li.innerText = input.value
-        ul.appendChild(li)
+        mySave.push(input.value)
+        localStorage.setItem("mySave", JSON.stringify(mySave))
         input.value = ''
-
-        li.addEventListener('click', function () {
-            ul.removeChild(li)
-        })
+        doIt()
     }
-
 })
+
+function doIt() {
+    list = ''
+    for (let i = 0; i < mySave.length; i++) {
+        list += `<li onclick="dele()" class="liStyle">${mySave[i]}</li>`
+    }
+    ul.innerHTML = list
+}
+
+let dele = function() {
+    localStorage.removeItem("mySave")
+    mySave.pop()
+    doIt()
+    console.log("working")
+}
+
+
+
+
+
+
 
 
