@@ -1,7 +1,7 @@
 const input = document.querySelector('#input')
 let ul = document.querySelector('#ul')
 const reload = JSON.parse(localStorage.getItem("mySave"))
-
+const del = document.querySelector('#del')
 
 let mySave = []
 
@@ -27,6 +27,12 @@ function doIt() {
     }
     ul.innerHTML = list
 }
+
+del.addEventListener('click', function () {
+    localStorage.removeItem('mySave')
+    mySave = []
+    doIt()
+})
 
 // let dele = function(e) {
 //     localStorage.removeItem("mySave")
